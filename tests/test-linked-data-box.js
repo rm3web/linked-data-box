@@ -101,7 +101,6 @@ describe('LinkedDataBox', () => {
         { pred: 'bro', tag: 'rro' },
         { pred: 'bro', tag: 'fro' } ];
       arr.should.eql(vect);
-      arr.length.should.equal(4);
     });
   });
 });

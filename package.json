@@ -1,0 +1,38 @@
+{
+  "name": "linked-data-box",
+  "version": "0.1.0",
+  "description": "A lightweight data structure for linked data (RDF / JSON-LD style)",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/*.js",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --  --compilers js:babel-register tests/*.js"
+  },
+  "keywords": [
+    "rdf",
+    "jsonld",
+    "hypermedia",
+    "linked-data",
+    "json-ld",
+    "semantic"
+  ],
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "chai": "^3.4.1",
+    "immutable": "^3.7.6",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "babelify": "^7.2.0",
+    "karma": "^0.13.15",
+    "karma-browserify": "^4.4.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.19"
+  }
+}

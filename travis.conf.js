@@ -112,7 +112,7 @@ module.exports = function(config) {
     },
 
     sauceLabs: {
-      testName: 'SitePath Unit Tests',
+      testName: 'Linked Data Box Unit Tests',
       tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
       username: process.env.SAUCE_USERNAME,
       accessKey: process.env.SAUCE_ACCESS_KEY,

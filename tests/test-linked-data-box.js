@@ -96,12 +96,12 @@ describe('LinkedDataBox', () => {
       v.iterateTags((pred, tag) => {
         arr.push({pred,tag});
       });
-      arr.length.should.equal(4);
       var vect = [ { pred: 'fro', tag: 'fro' },
         { pred: 'fro', tag: 'rho' },
         { pred: 'bro', tag: 'rro' },
         { pred: 'bro', tag: 'fro' } ];
       arr.should.eql(vect);
+      arr.length.should.equal(4);
     });
   });
 });

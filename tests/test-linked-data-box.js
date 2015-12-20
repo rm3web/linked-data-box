@@ -93,8 +93,11 @@ describe('LinkedDataBox', () => {
       v.addTag('fro', 'fro');
       v.addTag('bro', 'fro');
       v.addTag('bro', 'rro');
-      v.iterateTags((pred, tag) => {
+      var ctIdx = 0;
+      v.iterateTags((pred, tag, idx) => {
         arr.push({pred,tag});
+        ctIdx.should.equal(idx);
+        ctIdx = ctIdx + 1;
       });
       var vect = [ { pred: 'fro', tag: 'fro' },
         { pred: 'fro', tag: 'rho' },

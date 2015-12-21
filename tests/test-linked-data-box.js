@@ -93,16 +93,13 @@ describe('LinkedDataBox', () => {
       v.addTag('fro', 'fro');
       v.addTag('bro', 'fro');
       v.addTag('bro', 'rro');
-      var ctIdx = 0;
       v.iterateTags((pred, tag, idx) => {
-        arr.push({pred,tag});
-        ctIdx.should.equal(idx);
-        ctIdx = ctIdx + 1;
+        arr.push({pred: pred,tag:tag, idx:idx});
       });
-      var vect = [ { pred: 'fro', tag: 'fro' },
-        { pred: 'fro', tag: 'rho' },
-        { pred: 'bro', tag: 'rro' },
-        { pred: 'bro', tag: 'fro' } ];
+      var vect = [ { pred: 'fro', tag: 'fro', idx: 0},
+        { pred: 'fro', tag: 'rho', idx: 1 },
+        { pred: 'bro', tag: 'rro', idx: 2 },
+        { pred: 'bro', tag: 'fro', idx: 3 } ];
       arr.should.eql(vect);
     });
   });

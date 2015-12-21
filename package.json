@@ -1,6 +1,6 @@
 {
   "name": "linked-data-box",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight data structure for linked data (RDF / JSON-LD style)",
   "main": "dist/index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "semantic"
   ],
   "license": "BSD-2-Clause",
-  "dependencies": {    
+  "dependencies": {
     "immutable": "^3.7.6",
     "babel-polyfill": "^6.3.14"
   },

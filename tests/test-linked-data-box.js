@@ -103,4 +103,22 @@ describe('LinkedDataBox', () => {
       arr.should.eql(vect);
     });
   });
+
+  context('#mapTags', () => {
+    it('should work', () => {
+      var v = new LinkedDataBox();
+      v.addTag('fro', 'rho');
+      v.addTag('fro', 'fro');
+      v.addTag('bro', 'fro');
+      v.addTag('bro', 'rro');
+      var arr = v.mapTags((pred, tag, idx) => {
+        return {pred: pred,tag:tag, idx:idx};
+      });
+      var vect = [ { pred: 'fro', tag: 'fro', idx: 0},
+        { pred: 'fro', tag: 'rho', idx: 1 },
+        { pred: 'bro', tag: 'rro', idx: 2 },
+        { pred: 'bro', tag: 'fro', idx: 3 } ];
+      arr.should.eql(vect);
+    });
+  });
 });

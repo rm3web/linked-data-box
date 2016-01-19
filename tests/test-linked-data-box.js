@@ -31,6 +31,17 @@ describe('LinkedDataBox', () => {
     });
   });
 
+  context('#fromJSON', () => {
+    it('should work as a round-trip', () => {
+      const preds = {fro:["rho",{"@id":"urn:1","class":"link"}]}
+      const v = new LinkedDataBox();
+      v.fromJSON(preds);
+      const u = new LinkedDataBox(preds);
+      const vstr = JSON.stringify(v);
+      const ustr = JSON.stringify(u);
+    });
+  });
+
   context('#toJSON', () => {
     it('should work as a round-trip', () => {
       const preds = {fro:["rho",{"@id":"urn:1","class":"link"}]}

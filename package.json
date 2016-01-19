@@ -1,6 +1,6 @@
 {
   "name": "linked-data-box",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A lightweight data structure for linked data (RDF / JSON-LD style)",
   "main": "dist/index.js",
   "scripts": {

@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
+
+## 0.0.4 - 2016-01-18
 ### Added
 - LinkedDataBox#getTagId(), LinkedDataBox#hasTagId(), and LinkedDataBox#deleteTagId() have been added for when you are working with JSON-LD.
 

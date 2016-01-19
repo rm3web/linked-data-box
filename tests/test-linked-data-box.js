@@ -85,6 +85,36 @@ describe('LinkedDataBox', () => {
     });
   });
 
+  context('#deleteTagId', () => {
+    it('should work', () => {
+      var v = new LinkedDataBox();
+      v.addTag('fro', {"@id": "rho", "objClass": "tag"});
+      v.addTag('fro', {"@id": "fro", "objClass": "tag"});
+      v.deleteTagId('fro', 'fro');
+      v.hasTag('fro', {"@id": "rho", "objClass": "tag"}).should.be.equal(true);
+      v.hasTag('fro', {"@id": "fro", "objClass": "tag"}).should.be.equal(false);
+    });
+  });
+
+  context('#getTagId', () => {
+    it('should work', () => {
+      var v = new LinkedDataBox();
+      v.addTag('fro', {"@id": "rho", "objClass": "tag"});
+      v.getTagId('fro','rho').should.be.eql({"@id": "rho", "objClass": "tag"});
+    });
+  });
+
+  context('#hasTagId', () => {
+    it('should work', () => {
+      var v = new LinkedDataBox();
+      v.addTag('fro', {"@id": "rho", "objClass": "tag"});
+      v.addTag('fro', {"@id": "fro", "objClass": "tag"});
+      v.hasTagId('fro','rho').should.be.equal(true);
+      v.hasTagId('fro', 'fro').should.be.equal(true);
+      v.hasTagId('fro', 'gro').should.be.equal(false);
+    });
+  });
+
   context('#iterateTags', () => {
     it('should work', () => {
       var v = new LinkedDataBox();

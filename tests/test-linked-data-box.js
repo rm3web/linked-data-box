@@ -115,6 +115,18 @@ describe('LinkedDataBox', () => {
     });
   });
 
+  context('#hasTag', () => {
+    it('should work', () => {
+      var v = new LinkedDataBox();
+      v.addTag('fro', 'rho');
+      v.addTag('fro', 'fro');
+      v.hasTag('fro','rho').should.be.equal(true);
+      v.hasTag('fro', 'fro').should.be.equal(true);
+      v.hasTag('fro', 'gro').should.be.equal(false);
+      v.hasTag('tro', 'gro').should.be.equal(false);
+    });
+  });
+
   context('#hasTagId', () => {
     it('should work', () => {
       var v = new LinkedDataBox();
@@ -123,6 +135,7 @@ describe('LinkedDataBox', () => {
       v.hasTagId('fro','rho').should.be.equal(true);
       v.hasTagId('fro', 'fro').should.be.equal(true);
       v.hasTagId('fro', 'gro').should.be.equal(false);
+      v.hasTagId('tro', 'gro').should.be.equal(false);
     });
   });
 

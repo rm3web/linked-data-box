@@ -1,15 +1,24 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "4"
-  - "5"
+- '0.12'
+- '4'
+- '5'
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   sauce_connect: true
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
-script: "npm run travis"
+    - g++-4.8
+script: npm run travis
+deploy:
+  provider: npm
+  email: wh-npm@wirewd.com
+  api_key:
+    secure: X5JS9tv3h/5G7Am8aZTjnItYQXUAKBn0bO08o/s5RIFozmZUM+Gvw+TBb3rxN86rzv4tHA+yPYnfdQ7WZnOGaKBgz4s18cVSFrmtS5HXz7k5zZpgjQLg4kRx2B+uXzBdEVfEk3GLOfDMAU6RurWyl3vc74LKbbC37Q9uvkpWXQIordGRWjaUnqyqBrb5CLv/2kL6Igs6CnX9VbXTxpr23IjE2xuB+Vf0jBZ6j77YTpIzt/n3PlK6DPUKrGH6yYK8fXAlEVb5Bk7HATKVwpC2n+bc+7XxJikq0118N0QMPvLqYdcs3s1/3fDajqtTwo/w94T8hfakpR4PmGrGLb2D+VJ+Bo9MXBGkrE36vSMZZ9+FIUwg9z17uzJgiSuRJ+IyC7l+j0rB2k2M9KbaGzz5MwwKUGZ8qnPzMKk1DWqj6enYNiegu876UrpBTmNLDegLX5Ke7QRkL1CyaIimHM5w8Bbk3yl1XRF/MuaaJBJrnrmoIcVFAQ4eYSuh1TcEGs28hlS5VlYIkt/XxIixcrIIfuSaUz0V49Nc/wEVBBA+MtsO0SScWRJPhf3krmzCxfp28RXEOpNIWLEQKYE/ziUlXOF1n1YQQHAKNni2PHQThM84p7CLLqM9YTB8Pcrxd2e5WIyxNMQIg98Bf9R30bzz5SG4tl0bqYaHhU53TtDsUEA=
+  on:
+    tags: true
+    repo: rm3web/linked-data-box
+    node: '4'

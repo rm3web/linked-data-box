@@ -3,8 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
+
+## 0.0.5 - 2016-02-14
 ### Fixed
 - LinkedDataBox#hasTagId() and  LinkedDataBox#hasTag() were broken with a missing predicate.
+- Updated dependencies.
 
 ## 0.0.4 - 2016-01-18
 ### Added

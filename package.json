@@ -31,7 +31,7 @@
   ],
   "license": "BSD-2-Clause",
   "dependencies": {
-    "babel-polyfill": "~6.3.14",
+    "babel-polyfill": "~6.5.0",
     "immutable": "~3.7.6"
   },
   "devDependencies": {

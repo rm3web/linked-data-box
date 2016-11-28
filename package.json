@@ -29,6 +29,10 @@
     "json-ld",
     "semantic"
   ],
+  "engines": {
+    "node": "4.x || 5.x",
+    "npm": "2.x || 3.x"
+  },
   "license": "BSD-2-Clause",
   "dependencies": {
     "babel-polyfill": "~6.16.0",

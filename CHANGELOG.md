@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Unreleased
 
 ### Changed
+- Removed Node 0.12 support
 - Updated dependencies.
 
 ## 0.0.5 - 2016-02-14

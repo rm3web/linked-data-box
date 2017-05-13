@@ -1,5 +1,7 @@
 # Linked Data Box
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rm3web/linked-data-box.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/rm3web/linked-data-box.svg?branch=master)](https://travis-ci.org/rm3web/linked-data-box)[![Dependency Status](https://david-dm.org/rm3web/linked-data-box.svg)](https://david-dm.org/rm3web/linked-data-box)[![npm version](https://badge.fury.io/js/linked-data-box.svg)](https://badge.fury.io/js/linked-data-box)
 
 This is a lightweight data structure to convey RDF / JSON-LD styled "linked" or "semantic" metadata around.  Very specifically and concretely, from a metadata editor on the browser to the server side.

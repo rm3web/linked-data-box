@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 0.0.6 - 2016-02-14
+
 ### Changed
 - Removed Node 0.12 support
 - Updated dependencies.

@@ -44,7 +44,7 @@
     "babel-register": "~6.24.0",
     "babelify": "~7.3.0",
     "browserify": "^14.3.0",
-    "chai": "~4.0.2",
+    "chai": "~4.1.0",
     "documentation": "~4.0.0-beta",
     "istanbul": "~0.4.1",
     "karma": "~1.7.0",

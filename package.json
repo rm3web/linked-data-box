@@ -45,7 +45,7 @@
     "babelify": "~7.3.0",
     "browserify": "^14.3.0",
     "chai": "~4.1.0",
-    "documentation": "~4.0.0-beta",
+    "documentation": "~5.3.5",
     "istanbul": "~0.4.1",
     "karma": "~2.0.0",
     "karma-browserify": "~5.1.0",

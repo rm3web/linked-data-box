@@ -30,8 +30,8 @@
     "semantic"
   ],
   "engines": {
-    "node": "4.x || 5.x",
-    "npm": "2.x || 3.x"
+    "node": "4.x || 5.x || 6.x || 8.x",
+    "npm": "2.x || 3.x || 4.x || 5.x"
   },
   "license": "BSD-2-Clause",
   "dependencies": {

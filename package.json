@@ -30,8 +30,8 @@
     "semantic"
   ],
   "engines": {
-    "node": "4.x || 5.x",
-    "npm": "2.x || 3.x"
+    "node": "4.x || 5.x || 6.x || 8.x",
+    "npm": "2.x || 3.x || 4.x || 5.x"
   },
   "license": "BSD-2-Clause",
   "dependencies": {
@@ -48,7 +48,7 @@
     "istanbul": "~0.4.1",
     "karma": "~2.0.0",
     "karma-browserify": "~5.2.0",
-    "karma-chrome-launcher": "~2.1.1",
+    "karma-chrome-launcher": "~2.2.0",
     "karma-firefox-launcher": "~1.1.0",
     "karma-mocha": "~1.3.0",
     "karma-phantomjs-launcher": "~1.0.0",
